@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana & Carlos - Nuestra Boda</title>
+    <meta name="description" content="Te invitamos a celebrar nuestro matrimonio. Confirma tu asistencia y reserva tu mesa.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-heart"></i>
+                <span>Ana & Carlos</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#historia" class="nav-link">Nuestra Historia</a></li>
+                <li><a href="#evento" class="nav-link">El Evento</a></li>
+                <li><a href="#rsvp" class="nav-link">Confirmar</a></li>
+                <li><a href="#mesas" class="nav-link">Reservar Mesa</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#regalos" class="nav-link">Regalos</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-heart">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h1 class="hero-title">Ana & Carlos</h1>
+            <p class="hero-subtitle">Nos casamos y queremos celebrarlo contigo</p>
+            
+            <div class="countdown-container">
+                <div class="countdown-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>22 de Diciembre, 2025</span>
+                </div>
+                
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+                
+                <div class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jardín Botánico, Ciudad</span>
+                </div>
+            </div>
+            
+            <div class="hero-message">
+                <p>Después de muchos años juntos, hemos decidido dar el siguiente paso en nuestra historia de amor. Te invitamos a ser parte de este momento tan especial para nosotros.</p>
+                <div class="hero-divider">
+                    <div class="divider-line"></div>
+                    <i class="fas fa-heart"></i>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="historia" class="our-story">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Historia</h2>
+                <p>Cada gran amor tiene una historia única. Esta es la nuestra.</p>
+            </div>
+    
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.pexels.com/photos/28697524/pexels-photo-28697524.jpeg"
+                                alt="Nos conocimos">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Nos conocimos</h3>
+                            <span class="timeline-date">Marzo 2023</span>
+                            <p>Fue en una cafetería cerca de la universidad. Carlos derramó café en el libro de Ana, y ese
+                                "accidente" cambió nuestras vidas para siempre.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="timeline-item timeline-item-reverse">
+                    <div class="timeline-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.pexels.com/photos/28697527/pexels-photo-28697527.jpeg"
+                                alt="Primera cita">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Primera cita</h3>
+                            <span class="timeline-date">Abril 2023</span>
+                            <p>Nuestra primera cita oficial fue en el parque central. Caminamos durante horas hablando de
+                                todo y nada a la vez.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.pexels.com/photos/259593/pexels-photo-259593.jpeg"
+                                alt="Nos mudamos juntos">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Nos mudamos juntos</h3>
+                            <span class="timeline-date">Enero 2024</span>
+                            <p>Después de 3 años de relación, decidimos dar el paso de vivir juntos. Nuestro pequeño
+                                apartamento se convirtió en nuestro hogar.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="timeline-item timeline-item-reverse">
+                    <div class="timeline-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.pexels.com/photos/13780093/pexels-photo-13780093.jpeg"
+                                alt="La propuesta">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>La propuesta</h3>
+                            <span class="timeline-date">Diciembre 2024</span>
+                            <p>Carlos preparó una sorpresa especial en la playa donde tuvimos nuestra primera vacación
+                                juntos. Con el atardecer de fondo, se arrodilló y Ana dijo que sí.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="story-conclusion">
+                <div class="conclusion-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Y ahora...</h3>
+                    <p>Estamos listos para comenzar el siguiente capítulo de nuestra historia. Un capítulo que queremos
+                        escribir rodeados de las personas que más amamos.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal para imágenes -->
+        <div id="imageModal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="evento" class="event-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>Detalles del Evento</h2>
+                <p>Todo lo que necesitas saber sobre nuestro gran día</p>
+            </div>
+            
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.pexels.com/photos/2788494/pexels-photo-2788494.jpeg" alt="Ceremonia">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-church"></i>
+                            </div>
+                            <div class="event-info">
+                                <h3>Ceremonia</h3>
+                                <div class="event-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>16:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Iglesia San José</strong>
+                                <p>Av. Principal 123, Centro</p>
+                            </div>
+                        </div>
+                        <p>Ceremonia religiosa donde oficializaremos nuestra unión ante Dios y nuestros seres queridos.</p>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.pexels.com/photos/19351563/pexels-photo-19351563.jpeg" alt="Recepción">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="event-info">
+                                <h3>Recepción</h3>
+                                <div class="event-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>18:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Jardín Botánico</strong>
+                                <p>Parque Central s/n, Zona Norte</p>
+                            </div>
+                        </div>
+                        <p>Celebración con cena, música y baile. ¡Prepárate para una noche inolvidable!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="schedule">
+                <h3>Cronograma del Día</h3>
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <div class="schedule-time">15:30</div>
+                        <div class="schedule-event">Recepción de invitados</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">16:00</div>
+                        <div class="schedule-event">Inicio de la ceremonia</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">17:00</div>
+                        <div class="schedule-event">Fin de la ceremonia y sesión de fotos</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-event">Cóctel de bienvenida</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">19:30</div>
+                        <div class="schedule-event">Cena</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">21:00</div>
+                        <div class="schedule-event">Primer baile</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">21:30</div>
+                        <div class="schedule-event">Baile libre</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">00:00</div>
+                        <div class="schedule-event">Brindis de medianoche</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">02:00</div>
+                        <div class="schedule-event">Cierre de la celebración</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="rsvp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Confirma tu Asistencia</h2>
+                <p>Tu presencia es muy importante para nosotros. Por favor, confirma tu asistencia antes del 1 de junio.</p>
+            </div>
+            
+            <div class="rsvp-form-container">
+                <form class="rsvp-form" id="rsvp-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Número de invitados</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>¿Podrás asistir? *</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="attending" value="yes" required>
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">¡Sí, ahí estaré!</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="attending" value="no" required>
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">No podré asistir</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dietary">Requerimientos dietarios o alergias</label>
+                        <textarea id="dietary" name="dietary" rows="3" placeholder="Vegetariano, sin gluten, alergias, etc."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje para los novios</label>
+                        <textarea id="message" name="message" rows="4" placeholder="¡Comparte tus felicitaciones o algún mensaje especial!"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Confirmar Asistencia</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="mesas" class="table-reservation">
+    <div class="container">
+        <div class="section-header">
+            <h2>Reserva tu Mesa</h2>
+            <p>Primero verifica tu asistencia, luego selecciona y personaliza tu mesa.</p>
+        </div>
+        
+        <!-- Paso 1: Verificación de invitado -->
+        <div class="reservation-step active" id="step-verification">
+            <div class="step-header">
+                <span class="step-number">1</span>
+                <h3>Verifica tu asistencia</h3>
+            </div>
+            <div class="verification-form">
+                <div class="form-group">
+                    <label for="search-name">Nombre completo *</label>
+                    <input type="text" id="search-name" placeholder="Como aparece en tu invitación">
+                </div>
+                <div class="form-group">
+                    <label for="search-email">Email *</label>
+                    <input type="email" id="search-email" placeholder="El que usaste para confirmar">
+                </div>
+                <button id="verify-btn" class="btn-primary">Verificar mi asistencia</button>
+                <div class="verification-result" id="verification-result"></div>
+            </div>
+        </div>
+        
+        <!-- Paso 2: Selección de mesa -->
+        <div class="reservation-step" id="step-selection">
+            <div class="step-header">
+                <span class="step-number">2</span>
+                <h3>Selecciona tu mesa</h3>
+            </div>
+            <div class="tables-grid" id="tables-grid">
+                <!-- Mesas se cargarán dinámicamente -->
+            </div>
+            <div class="selected-table-info" id="selected-table-info">
+                <p>Selecciona una mesa para ver detalles</p>
+            </div>
+        </div>
+        
+        <!-- Paso 3: Personalización de mesa -->
+        <div class="reservation-step" id="step-customization">
+            <div class="step-header">
+                <span class="step-number">3</span>
+                <h3>Personaliza tu mesa</h3>
+            </div>
+            <div class="customization-form">
+                <div class="form-group">
+                    <label>Categoría de mesa *</label>
+                    <div class="category-options">
+                        <label class="category-option">
+                            <input type="radio" name="table-category" value="individual" required>
+                            <div class="category-card">
+                                <i class="fas fa-user"></i>
+                                <h4>Individual</h4>
+                                <p>Solo para ti (1 persona)</p>
+                            </div>
+                        </label>
+                        <label class="category-option">
+                            <input type="radio" name="table-category" value="amigos" required>
+                            <div class="category-card">
+                                <i class="fas fa-users"></i>
+                                <h4>Amigos</h4>
+                                <p>Grupo de amigos (2-8 personas)</p>
+                            </div>
+                        </label>
+                        <label class="category-option">
+                            <input type="radio" name="table-category" value="familiar" required>
+                            <div class="category-card">
+                                <i class="fas fa-home"></i>
+                                <h4>Familiar</h4>
+                                <p>Para tu familia (2-8 personas)</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="table-name">Nombre de tu mesa (opcional)</label>
+                    <input type="text" id="table-name" placeholder="Ej: 'Los Compadres', 'Familia Rodríguez'">
+                    <p class="hint">Dale un nombre especial a tu mesa que todos reconozcan</p>
+                </div>
+                
+                <div class="form-group" id="guest-selection-container">
+                    <label>Selecciona a tus compañeros de mesa</label>
+                    <div class="guest-selection" id="guest-selection">
+                        <p class="info-text">Selecciona una categoría primero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Paso 4: Confirmación -->
+        <div class="reservation-step" id="step-confirmation">
+            <div class="step-header">
+                <span class="step-number">4</span>
+                <h3>Confirma tu reserva</h3>
+            </div>
+            <div class="confirmation-summary" id="confirmation-summary">
+                <!-- Resumen se cargará dinámicamente -->
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Peticiones especiales</label>
+                <textarea id="special-requests" rows="3" placeholder="Alergias, requerimientos especiales, etc."></textarea>
+            </div>
+            <button id="confirm-reservation-btn" class="btn-primary">Confirmar Reserva</button>
+        </div>
+        
+        <!-- Mensaje de éxito -->
+        <div class="reservation-success" id="reservation-success">
+            <i class="fas fa-check-circle"></i>
+            <h3>¡Reserva Confirmada!</h3>
+            <p id="success-message">Tu mesa ha sido reservada exitosamente.</p>
+            <div class="success-details" id="success-details"></div>
+            <button id="new-reservation-btn" class="btn-secondary">Hacer otra reserva</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Galería</h2>
+                <p>Momentos especiales que hemos vivido juntos y que queremos compartir contigo</p>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" data-src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop">
+                    <img src="https://images.pexels.com/photos/27204454/pexels-photo-27204454.png" alt="Nuestra propuesta">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <h3>Nuestra propuesta</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-src="https://images.pexels.com/photos/1030842/pexels-photo-1030842.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop">
+                    <img src="https://images.pexels.com/photos/2434255/pexels-photo-2434255.jpeg" alt="Primera cita">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <h3>Primera cita</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-src="https://images.pexels.com/photos/3826435/pexels-photo-3826435.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop">
+                    <img src="https://images.pexels.com/photos/29395685/pexels-photo-29395685.jpeg" alt="Momentos especiales">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <h3>Momentos especiales</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-src="https://images.pexels.com/photos/6930542/pexels-photo-6930542.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop">
+                    <img src="https://images.pexels.com/photos/9241440/pexels-photo-9241440.jpeg" alt="Nuestro hogar">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <h3>Nuestro hogar</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop">
+                    <img src="https://images.pexels.com/photos/8815274/pexels-photo-8815274.jpeg" alt="Celebrando">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <h3>Celebrando</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-src="https://images.pexels.com/photos/2072103/pexels-photo-2072103.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop">
+                    <img src="https://images.pexels.com/photos/6945995/pexels-photo-6945995.jpeg" alt="Viajes juntos">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <h3>Viajes juntos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gifts Section -->
+    <section id="regalos" class="gifts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mesa de Regalos</h2>
+                <p>Tu presencia es nuestro regalo más preciado, pero si deseas obsequiarnos algo especial, aquí tienes algunas opciones.</p>
+            </div>
+            
+            <div class="gifts-grid">
+                <div class="gift-card">
+                    <div class="gift-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Lista de Regalos</h3>
+                    <p>Hemos preparado una lista de regalos en nuestras tiendas favoritas</p>
+                    <div class="gift-stores">
+                        <a href="#" class="store-link amazon">
+                            <span>Amazon</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="store-link liverpool">
+                            <span>Liverpool</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="#" class="store-link crate">
+                            <span>Crate & Barrel</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="gift-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Transferencia Bancaria</h3>
+                    <p>Si prefieres hacer una transferencia, aquí tienes nuestros datos</p>
+                    <div class="bank-details">
+                        <div class="bank-item">
+                            <span>Banco:</span>
+                            <strong>Banco Nacional</strong>
+                        </div>
+                        <div class="bank-item">
+                            <span>Titular:</span>
+                            <strong>Ana Martínez</strong>
+                        </div>
+                        <div class="bank-item">
+                            <span>Cuenta:</span>
+                            <strong>1234-5678-9012-3456</strong>
+                        </div>
+                        <div class="bank-item">
+                            <span>CLABE:</span>
+                            <strong>012345678901234567</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gift-card">
+                    <div class="gift-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Luna de Miel</h3>
+                    <p>Ayúdanos a crear recuerdos inolvidables en nuestro viaje soñado</p>
+                    <div class="honeymoon-info">
+                        <div class="destination">
+                            <h4>París, Francia</h4>
+                            <p>Siempre hemos soñado con visitar la ciudad del amor. Tu contribución nos ayudará a hacer realidad este sueño.</p>
+                        </div>
+                        <button class="btn-secondary">Contribuir a la Luna de Miel</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gifts-message">
+                <div class="message-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Lo más importante</h3>
+                    <p>Recordemos que lo más valioso que puedes regalarnos es tu presencia en nuestro día especial. Tu amor, cariño y buenos deseos son los regalos más preciados para nosotros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-heart"></i>
+                        <h3>Ana & Carlos</h3>
+                    </div>
+                    <p>Nos encanta saber de ti. Si tienes alguna pregunta sobre nuestro gran día, no dudes en contactarnos.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ana.carlos@wedding.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Información del Evento</h4>
+                    <div class="event-info">
+                        <div class="event-item">
+                            <h5>Ceremonia</h5>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Iglesia San José, 16:00</span>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <h5>Recepción</h5>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jardín Botánico, 18:00</span>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <h5>Fecha</h5>
+                            <span>22 de Diciembre, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <p>Comparte este momento especial con nosotros en redes sociales usando nuestro hashtag oficial.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="hashtag">
+                        <h5>Hashtag oficial</h5>
+                        <span>#AnaYCarlos2025</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ana & Carlos. Hecho con <i class="fas fa-heart"></i> para nuestro día especial.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>
